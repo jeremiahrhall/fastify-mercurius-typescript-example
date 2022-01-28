@@ -1,0 +1,12 @@
+schema {
+  query: Query
+}
+
+type Query {
+  hello(name: String!): HelloResponse!
+}
+
+type HelloResponse {
+  message: String!
+  anotherField: String
+}
